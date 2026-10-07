@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "purpose": "Seed cache of model/year knowledge so the system does not re-research the same bike every hour.",
+    "refreshPolicy": "Refreshed on MODEL_CACHE_TTL_HOURS (default 336h = 14 days). Only the stale entry is refreshed, not the whole file.",
+    "valueDisclaimer": "All value ranges are ESTIMATES for private-party sales in Central Texas in good condition. They are starting points for comparison, not appraisals.",
+    "lastReviewed": "2026-09-29"
+  },
+
+  "yamaha_r3": {
+    "label": "Yamaha YZF-R3",
+    "years": "2015-present",
+    "engine": "321cc parallel twin, ~42 hp",
+    "generations": {
+      "2015-2018": "First gen. Conventional forks, taller bars, softer suspension.",
+      "2019-present": "Second gen. 37mm USD forks, lower clip-ons, sharper fairing, revised dash."
+    },
+    "knownIssues": [
+      "Early 2015 units were subject to recall campaigns covering the clutch pressure plate and fuel pump. Verify the VIN was remedied.",
+      "OEM Michelin Pilot Street tires are widely considered the weak point and are often replaced early.",
+      "Soft stock suspension, especially the rear shock, on first-gen bikes.",
+      "Stator/regulator failures reported occasionally on high-mileage first-gen bikes."
+    ],
+    "maintenance": [
+      "Valve clearance inspection interval is long (roughly 26,600 mi) but expensive if deferred.",
+      "Chain and sprockets typically need replacement around 15k-20k mi.",
+      "Oil change roughly every 4,000 mi."
+    ],
+    "commonMods": ["Slip-on exhaust", "Fender eliminator", "Frame sliders", "Levers", "Windscreen"],
+    "valueRangeUSD": { "low": 3200, "typical": 4300, "high": 5500 },
+    "mileageAdjustment": "Below 8k miles tends to sit at the upper end; above 20k miles drops toward the low end.",
+    "resaleNotes": "Strong beginner-bike demand keeps resale healthy. Easy to sell on.",
+    "buyerChecks": [
+      "Check for drop damage on bar ends, levers, and fairing edges.",
+      "Confirm chain and sprocket wear.",
+      "Ask whether the valve check has been done if over 25k miles."
+    ]
+  },
+
+  "ninja_400": {
+    "label": "Kawasaki Ninja 400",
+    "years": "2018-2023 (US)",
+    "engine": "399cc parallel twin, ~45 hp",
+    "generations": { "2018-2023": "Trellis frame, lighter than the R3, assist/slipper clutch standard." },
+    "knownIssues": [
+      "Budget rear shock; many riders replace or revalve it.",
+      "Isolated reports of gear position sensor faults.",
+      "Very popular with new riders, so a higher proportion of examples have been dropped."
+    ],
+    "maintenance": [
+      "Valve inspection roughly every 15,000 mi.",
+      "Chain and sprockets around 15k-20k mi.",
+      "Coolant every 2-3 years."
+    ],
+    "commonMods": ["Slip-on exhaust", "Fender eliminator", "Frame sliders", "Tail tidy"],
+    "valueRangeUSD": { "low": 3800, "typical": 4800, "high": 6000 },
+    "mileageAdjustment": "Under 6k miles commands a premium. Over 20k drops meaningfully.",
+    "resaleNotes": "Among the strongest resale values in the small-sport class.",
+    "buyerChecks": [
+      "Inspect for drop damage given the beginner-heavy ownership.",
+      "Confirm the slipper clutch engages smoothly.",
+      "Check for a replaced or leaking rear shock."
+    ]
+  },
+
+  "ninja_500": {
+    "label": "Kawasaki Ninja 500",
+    "years": "2024-present",
+    "engine": "451cc parallel twin, ~45 hp",
+    "generations": { "2024-present": "Replaced the Ninja 400. Larger displacement, similar chassis." },
+    "knownIssues": [
+      "Too new for a reliable long-term fault record.",
+      "Minimal used supply, so comparables are thin."
+    ],
+    "maintenance": ["Still within typical warranty period for most examples.", "Follow Kawasaki's first-service schedule."],
+    "commonMods": ["Slip-on exhaust", "Fender eliminator"],
+    "valueRangeUSD": { "low": 4800, "typical": 5600, "high": 6500 },
+    "mileageAdjustment": "Almost all examples are low mileage; condition and warranty matter more than miles.",
+    "resaleNotes": "Expected to track the Ninja 400's strong resale once supply builds.",
+    "buyerChecks": ["Confirm remaining factory warranty.", "Verify first service was performed on schedule."],
+    "budgetNote": "Rarely available under $4,100. Expect few or no matches at this budget."
+  },
+
+  "aprilia_rs457": {
+    "label": "Aprilia RS 457",
+    "years": "2024-present",
+    "engine": "457cc parallel twin, ~47 hp",
+    "generations": { "2024-present": "Aluminium twin-spar frame, ride modes, traction control." },
+    "knownIssues": [
+      "Too new for a reliable long-term fault record.",
+      "Dealer network and parts availability are thinner than the Japanese brands, which can mean longer waits on parts."
+    ],
+    "maintenance": ["Follow Aprilia's first-service schedule.", "Service costs tend to run above the Japanese equivalents."],
+    "commonMods": ["Slip-on exhaust", "Tail tidy"],
+    "valueRangeUSD": { "low": 5200, "typical": 6100, "high": 7000 },
+    "mileageAdjustment": "Nearly all examples are low mileage; warranty status dominates value.",
+    "resaleNotes": "Depreciates faster than Honda/Kawasaki/Yamaha equivalents.",
+    "buyerChecks": ["Confirm warranty transfer.", "Ask where it has been serviced and how far the nearest dealer is."],
+    "budgetNote": "Rarely available under $4,100. Expect few or no matches at this budget."
+  },
+
+  "cfmoto_450ss": {
+    "label": "CFMoto 450SS",
+    "years": "2023-present",
+    "engine": "449cc parallel twin, ~46 hp",
+    "generations": { "2023-present": "270-degree crank, aggressive styling, strong value proposition new." },
+    "knownIssues": [
+      "Too new for a long-term fault record.",
+      "Dealer network is sparse in parts of Texas; parts lead times can be longer.",
+      "Brand resale is weaker than the Japanese equivalents."
+    ],
+    "maintenance": ["Follow CFMoto's break-in and first service.", "Confirm a servicing dealer exists within reasonable range before buying."],
+    "commonMods": ["Slip-on exhaust", "Frame sliders"],
+    "valueRangeUSD": { "low": 4200, "typical": 5000, "high": 6000 },
+    "mileageAdjustment": "Condition and warranty dominate; mileage is usually low across the board.",
+    "resaleNotes": "Weakest resale of the five. Buy on price, not on expected resale value.",
+    "buyerChecks": ["Locate the nearest servicing dealer first.", "Confirm warranty status and that service was done on schedule."],
+    "budgetNote": "Rarely available under $4,100. Expect few or no matches at this budget."
+  }
+}

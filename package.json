@@ -1,0 +1,25 @@
+{
+  "name": "moto-scout",
+  "version": "1.0.0",
+  "description": "Local Facebook Marketplace motorcycle scout. Drives an already-logged-in Opera session over CDP and exposes a JSON API for n8n.",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "TEST_MODE=true node src/server.js",
+    "init-db": "node src/db.js --init",
+    "init-sheets": "node src/sheets.js --init",
+    "selfcheck": "node src/selfcheck.js",
+    "search": "node src/cli.js search",
+    "listing": "node src/cli.js listing",
+    "sweep": "node src/cli.js sweep"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.21.1",
+    "googleapis": "^144.0.0"
+  }
+}
